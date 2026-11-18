@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.ipynb_checkpoints/
+wandb/
+
+# notebook outputs (tables/figures) and scratch files
+notebooks/outputs/
+temp/
+temp_*
+
+# local, not for the public repo
+cluster-notes.md
