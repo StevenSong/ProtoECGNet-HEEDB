@@ -54,7 +54,7 @@ sets up a clone of that commit and its env under `~/protoecgnet-heedb-run/commit
 then runs the stage there.
 
 Each stage trains in node-local staging (`~/protoecgnet-heedb-run/outputs/<run>/`). When it
-finishes, it publishes to `/opt/gpu_working/steven/protoecgnet-heedb-shared/runs/<run>/<branch>/`
+finishes, it publishes to `/shared/gpudata/songs1/protoecgnet-heedb-shared/runs/<run>/<branch>/`
 in one rename, without the `wandb/` dirs and with a `COMMIT` file. The fusion job reads the
 branch checkpoints from there, so it can run on any node. Job logs are copied to the shared
 `logs/`.
