@@ -15,7 +15,6 @@
     "source=${localEnv:HOME}/.cache/uv,target=${localEnv:HOME}/.cache/uv,type=bind,consistency=cached",
     "source=${localEnv:HOME}/protoecgnet-heedb-run,target=${localEnv:HOME}/protoecgnet-heedb-run,type=bind,consistency=cached,readonly",
     "source=/shared/gpudata/songs1/protoecgnet-heedb-shared,target=/shared/gpudata/songs1/protoecgnet-heedb-shared,type=bind,consistency=cached,readonly",
-    "source=${localEnv:HOME}/protoecgnet-heedb,target=${localEnv:HOME}/protoecgnet-heedb,type=bind,consistency=cached,readonly",
     "source=${localEnv:HOME}/.cache/protossl_cache,target=${localEnv:HOME}/.cache/protossl_cache,type=bind,consistency=cached,readonly",
     "source=/opt/gpudata/ecg,target=/opt/gpudata/ecg,type=bind,consistency=cached,readonly"
   ],

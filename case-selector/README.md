@@ -27,7 +27,7 @@ slurm/submit.sh -p h200 --cpus-per-task=64 -- python case-selector/build_case_se
 ```
 
 Fusion predictions come from `--fusion-dir`, which defaults to the audited label
-retrain archived at `~/protoecgnet-heedb` (v4). The build binarizes `test_probs.npy` at
+retrain, v4 (`/shared/gpudata/songs1/protoecgnet-heedb-shared/runs/v4`). The build binarizes `test_probs.npy` at
 per-label Youden's J thresholds fit on `val_probs.npy` against the audited
 physician overread, the same way `notebooks/muse-accuracy.ipynb` does. The thresholds are
 saved in `index.js` metadata.

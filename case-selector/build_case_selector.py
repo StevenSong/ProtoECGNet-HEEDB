@@ -66,9 +66,8 @@ LABEL_SOURCES = [
     ("audited_muse", "MUSE (audited)", "MUSE"),
     ("protoecgnet_fusion", "ProtoECGNet fusion (model)", "Fusion"),
 ]
-# the v4 audited label retrain (made with ProtoSSL's large-user-study scripts), archived
-# on nvl01; a run made here is under <shared root>/runs/<run>/fusion/... instead
-FUSION_DIR = "/home/songs1/protoecgnet-heedb/fusion/train-fusion-classifier/latest"
+# the v4 audited label retrain (made with ProtoSSL's large-user-study scripts)
+FUSION_DIR = "/shared/gpudata/songs1/protoecgnet-heedb-shared/runs/v4/fusion/train-fusion-classifier/latest"
 SHARD_SIZE = 10_000
 HERE = Path(__file__).resolve().parent
 

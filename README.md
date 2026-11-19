@@ -86,11 +86,13 @@ Editing them is fine but rebuilds the affected caches on every node.
 
 ## Results
 
-The v4 run, made with ProtoSSL's `large-user-study` scripts, is archived on nvl01 at
-`~/protoecgnet-heedb`, in the same layout as a published run here. Its
-`metrics-bootstrapped-v2.csv` files are reproduced byte for byte by
-`scripts/eval_probs_bootstrapped.py` from its `test_probs.npy`. The notebooks read the v4
-archive by default (`run_path`) and write tables and figures to `notebooks/outputs/`.
+The v4 run, made with ProtoSSL's `large-user-study` scripts, is at
+`/shared/gpudata/songs1/protoecgnet-heedb-shared/runs/v4`, in the same layout as a published
+run here (without `wandb/`, which synced to the wandb server). Its `COMMIT` files name the
+ProtoSSL commits it was trained from. Its `metrics-bootstrapped-v2.csv` files are reproduced
+byte for byte by `scripts/eval_probs_bootstrapped.py` from its `test_probs.npy`. The
+notebooks read v4 by default (`run_path`) and write tables and figures to
+`notebooks/outputs/`.
 
 ## Not carried over
 
